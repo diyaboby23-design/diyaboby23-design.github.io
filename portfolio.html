@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diya Boby | IMCA Student Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6f4;--ink:#16302b;--muted:#4d6660;--card:#ffffff;--teal:#0f766e;--plum:#7c2d6b;--line:#cfdcd7}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1c19;--ink:#e6f1ed;--muted:#9fb8b0;--card:#16282400;--teal:#5eead4;--plum:#e9a6d8;--line:#2b423c}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Outfit,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--plum);outline-offset:3px}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;z-index:5;flex-wrap:wrap;gap:8px}
+nav b{font-family:Fraunces,serif;font-size:1.2rem}
+nav div a{margin-left:20px;text-decoration:none;color:var(--muted)}
+nav div a:hover{color:var(--teal)}
+section{padding:80px 5vw;max-width:1000px;margin:auto}
+.hero{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;min-height:80vh}
+.hero h1{font-size:clamp(3rem,10vw,6.5rem);font-weight:800;letter-spacing:-.02em}
+.hero p{max-width:34em;color:var(--muted);margin:20px 0 28px;font-size:1.15rem}
+.avatar{width:190px;height:190px;border-radius:50% 50% 50% 8%;background:linear-gradient(135deg,var(--teal),var(--plum));display:grid;place-items:center;font:800 4rem Fraunces,serif;color:#fff}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;background:var(--teal);color:var(--bg);text-decoration:none;font-weight:500;margin-right:10px}
+.btn.alt{background:none;border:2px solid var(--teal);color:var(--teal)}
+h2{font-size:2.2rem;margin-bottom:28px}
+.about{display:grid;grid-template-columns:2fr 1fr;gap:40px}
+.facts{border-left:4px solid var(--plum);padding-left:20px;color:var(--muted)}
+.facts p{margin-bottom:10px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.skill-group h3{font-size:1.2rem;margin-bottom:12px;color:var(--teal)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid var(--line);background:var(--card);padding:5px 14px;border-radius:999px;font-size:.95rem}
+.filters{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.filters button{font:inherit;padding:7px 18px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--plum);color:#fff;border-color:var(--plum)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.project{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--teal);padding:24px;border-radius:6px 22px 6px 6px}
+.project h3{font-size:1.3rem;margin-bottom:8px}
+.project p{color:var(--muted);margin-bottom:12px}
+.project small{color:var(--plum);font-weight:500}
+form{display:grid;gap:14px;max-width:520px}
+input,textarea{font:inherit;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+#msg{color:var(--teal);min-height:1.5em}
+footer{text-align:center;padding:30px;color:var(--muted);border-top:1px solid var(--line)}
+@media(max-width:700px){.hero,.about{grid-template-columns:1fr}.avatar{width:120px;height:120px;font-size:2.5rem}nav div a{margin:0 12px 0 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><b>Diya Boby</b><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+
+<section class="hero">
+  <div>
+    <h1>Diya Boby</h1>
+    <p>Integrated MCA student at Rajagiri College of Social Sciences. I build web and database applications and enjoy turning messy problems into simple, useful software.</p>
+    <a class="btn" href="#projects">See my projects</a><a class="btn alt" href="#contact">Get in touch</a>
+  </div>
+  <div class="avatar" aria-hidden="true">DB</div>
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <div class="about">
+    <p>I am pursuing the Integrated Master of Computer Applications (IMCA) at Rajagiri College of Social Sciences, Kalamassery, Kerala. I like learning by building: small apps, class projects and team work have taught me how to plan, code, test and present a product. I am looking for internships where I can grow as a developer.</p>
+    <div class="facts">
+      <p><strong>Course</strong><br>IMCA</p>
+      <p><strong>College</strong><br>Rajagiri College of Social Sciences</p>
+      <p><strong>Location</strong><br>Kerala, India</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill-group"><h3>Programming</h3><div class="chips"><span>Python</span><span>Java</span><span>C</span><span>JavaScript</span></div></div>
+    <div class="skill-group"><h3>Web</h3><div class="chips"><span>HTML</span><span>CSS</span><span>React basics</span><span>Responsive design</span></div></div>
+    <div class="skill-group"><h3>Data</h3><div class="chips"><span>SQL</span><span>MySQL</span><span>Excel</span><span>Data visualisation</span></div></div>
+    <div class="skill-group"><h3>Tools and soft skills</h3><div class="chips"><span>Git and GitHub</span><span>Figma</span><span>Teamwork</span><span>Presentation</span></div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="filters" role="group" aria-label="Filter projects">
+    <button aria-pressed="true" data-f="all">All</button>
+    <button aria-pressed="false" data-f="web">Web</button>
+    <button aria-pressed="false" data-f="data">Data</button>
+    <button aria-pressed="false" data-f="app">Apps</button>
+  </div>
+  <div class="projects">
+    <article class="project" data-t="web"><h3>Personal Portfolio Website</h3><p>A responsive portfolio built with HTML, CSS and JavaScript to showcase skills and work.</p><small>HTML, CSS, JavaScript</small></article>
+    <article class="project" data-t="data"><h3>Student Management System</h3><p>A database project to store student records, attendance and marks with search and report features.</p><small>Python, MySQL</small></article>
+    <article class="project" data-t="web"><h3>Online Bookstore</h3><p>A mini e-commerce site with a book catalogue, cart and order form.</p><small>HTML, CSS, PHP, MySQL</small></article>
+    <article class="project" data-t="app"><h3>Expense Tracker</h3><p>A simple app to log daily spending by category and see monthly totals.</p><small>Java</small></article>
+    <article class="project" data-t="data"><h3>Sales Data Dashboard</h3><p>Cleaned a sample sales dataset and built charts that show trends by month and product.</p><small>Excel, SQL</small></article>
+    <article class="project" data-t="app"><h3>Quiz App</h3><p>A multiple-choice quiz with scoring and instant feedback for classmates.</p><small>Python</small></article>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p style="margin-bottom:20px;color:var(--muted)">Have an opportunity or a question? Send me a message.</p>
+  <form id="f">
+    <input id="n" placeholder="Your name" aria-label="Your name" required>
+    <input id="e" type="email" placeholder="Your email" aria-label="Your email" required>
+    <textarea id="m" rows="4" placeholder="Your message" aria-label="Your message" required></textarea>
+    <button class="btn" type="submit" style="border:0;cursor:pointer;font:inherit">Send message</button>
+    <div id="msg" role="status"></div>
+  </form>
+  <p style="margin-top:24px">Email: <a href="mailto:diya.boby@example.com">diya.boby@example.com</a> &nbsp;|&nbsp; <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp; <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></p>
+</section>
+
+<footer>&copy; 2026 Diya Boby. IMCA, Rajagiri College of Social Sciences.</footer>
+
+<script>
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  const f=b.dataset.f;
+  document.querySelectorAll('.project').forEach(p=>p.style.display=(f==='all'||p.dataset.t===f)?'':'none');
+}));
+document.getElementById('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  document.getElementById('msg').textContent='Thanks, '+document.getElementById('n').value+'. Your message is ready to send once a mail service is connected.';
+  e.target.reset();
+});
+</script>
+</body>
+</html>
